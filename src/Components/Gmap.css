@@ -1,0 +1,82 @@
+
+
+.info-card {
+  max-width: 300px;
+  font-family: Arial, sans-serif;
+}
+
+.image-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.preview-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.preview-image:hover {
+  transform: scale(1.05);
+}
+
+.fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.fullscreen-inner {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  z-index: 10000;
+  cursor: default;
+  display: flex;
+  align-items: center;
+}
+
+.fullscreen-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 10001;
+  padding: 10px 20px;
+  user-select: none;
+}
+
+.nav-btn.left {
+  left: -50px;
+}
+
+.nav-btn.right {
+  right: -50px;
+}
+
+
+
