@@ -1,17 +1,34 @@
 import React from 'react';
-import './About.css';
+// import { FaInstagram, FaTwitter, FaFacebook, FaLinkedin } from 'react-icons/fa';
+import './Footer.css';
 
-const About = () => {
+const Footer = () => {
   return (
-    <section className="about">
-      <div className="about__content">
-        <h2>About Us</h2>
-        <p>
-          We are a passionate team dedicated to providing exceptional services in the real estate industry. Our expertise and commitment ensure that we meet all your property needs with professionalism and care.
-        </p>
+    <footer className="footer">
+      <div className="footer__content">
+        <div className="footer__logo">
+          <span>PrimeNest</span>
+        </div>
+        <div className="footer__socials">
+          {/* <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <FaInstagram />
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <FaTwitter />
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <FaFacebook />
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin />
+          </a> */}
+        </div>
       </div>
-    </section>
+      <div className="footer__bottom">
+        <p>&copy; {new Date().getFullYear()} Your Business. All rights reserved.</p>
+      </div>
+    </footer>
   );
 };
 
-export default About;
+export default Footer;
